@@ -8,6 +8,8 @@ export default function PhotoPage ({ params }) {
         { id: '2', value: image_transport },
     ]
 
+    console.log(params);
+
     const photo = photos.find(p => p.id === params.id) || photos[0];
 
     return (
