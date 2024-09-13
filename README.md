@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 目录结构
 
-First, run the development server:
+  src
+  ├─ middleware.js                        - 中间件
+  ├─ styles                               - 样式
+  │  └─ variables.module.scss
+  ├─ public
+  │  └─ favicon.ico
+  ├─ components                           - 组件
+  │  └─ loading                           - 全局loading组件
+  │     ├─ index.js
+  │     └─ index.module.scss
+  ├─ assets                               - 静态资源
+  │  └─ images
+  │     ├─ bear.jpg
+  │     └─ transport.jpg
+  ├─ app                                  - 页面目录
+  │  ├─ layout.js                         - 全局布局
+  │  ├─ page.js                           - 项目首页
+  │  ├─ _private
+  │  │  └─ page.js
+  │  ├─ photo
+  │  │  └─ [id]
+  │  │     └─ page.js
+  │  ├─ login
+  │  │  ├─ layout.js
+  │  │  └─ page.js
+  │  ├─ blog
+  │  │  ├─ loading.js
+  │  │  ├─ page.js
+  │  │  └─ page.module.scss
+  │  ├─ about
+  │  │  └─ page.js
+  │  └─ (group_1)
+  │     ├─ group_item_2
+  │     │  └─ page.js
+  │     └─ group_item_1
+  │        └─ page.js
+  └─ api                                    - 请求文件夹
+  ├─ common.js                              -
+  └─ route.js                               - 封装axios
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 前期准备
+ - 划分功能目录
+ - 设置端口号，HOST=0.0.0.0，方便访问
+ - 设置打包输入目录名 dist，默认.next，和其他框架保持一致，减少理解时间
+ - 安装axios，封装公共请求方法，请求拦截，响应结果处理
+ - 安装sass，作为页面个性化需要的样式文件
+ - 配置tailwindCSS，根据项目字体、颜色等规范，设置统一类名
+ - 配置 git cz 规范 // todo
+ - 配置 git 提交钩子，避免跳过git cz进行不规范提交 // todo
 
-You can start editing the page by modifying `app/index.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# 实现功能
+- 私有化文件夹，按需求屏蔽对应路由文件
+- 路由分组合并，按功能归类相关页面
+- 动态路由文件夹，按请求处理不同输出
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 中间件功能
+- 

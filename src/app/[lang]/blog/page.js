@@ -6,7 +6,7 @@ export default async function Blog () {
 
     return (
         <div className={styles.blog}>
-            <h1>Blog Posts</h1>
+            <h1>Blog</h1>
             <ul>
                 {blogList.map((blog) => (
                     <li key={blog.id}>
