@@ -1,45 +1,23 @@
 
 # 目录结构
+- src/api                   请求文件夹
+- src/api/common.js         通用模块请求
+- src/api/route.js          封装axios，请求拦截，响应结果处理
 
-  src
-  ├─ middleware.js                        - 中间件
-  ├─ styles                               - 样式
-  │  └─ variables.module.scss
-  ├─ public
-  │  └─ favicon.ico
-  ├─ components                           - 组件
-  │  └─ loading                           - 全局loading组件
-  │     ├─ index.js
-  │     └─ index.module.scss
-  ├─ assets                               - 静态资源
-  │  └─ images
-  │     ├─ bear.jpg
-  │     └─ transport.jpg
-  ├─ app                                  - 页面目录
-  │  ├─ layout.js                         - 全局布局
-  │  ├─ page.js                           - 项目首页
-  │  ├─ _private
-  │  │  └─ page.js
-  │  ├─ photo
-  │  │  └─ [id]
-  │  │     └─ page.js
-  │  ├─ login
-  │  │  ├─ layout.js
-  │  │  └─ page.js
-  │  ├─ blog
-  │  │  ├─ loading.js
-  │  │  ├─ page.js
-  │  │  └─ page.module.scss
-  │  ├─ about
-  │  │  └─ page.js
-  │  └─ (group_1)
-  │     ├─ group_item_2
-  │     │  └─ page.js
-  │     └─ group_item_1
-  │        └─ page.js
-  └─ api                                    - 请求文件夹
-  ├─ common.js                              -
-  └─ route.js                               - 封装axios
+- src/app                   页面文件目录
+- src/app/favicon.ico       网站图标
+- src/app/[lang]            国际化动态路由文件目录
+- src/app/[lang]/layout.js  全局布局文件
+
+- src/assets                静态资源目录
+
+- src/components            组件目录
+- src/components/loading.js loading组件
+
+- src/styles                样式目录
+- src/utils                 工具目录
+
+- src/middleware.js         中间件文件
 
 
 # 前期准备
@@ -57,7 +35,8 @@
 - 私有化文件夹，按需求屏蔽对应路由文件
 - 路由分组合并，按功能归类相关页面
 - 动态路由文件夹，按请求处理不同输出
+- 支持国际化
 
 
 # 中间件功能
-- 
+- 匹配国际化路由，动态切换语言
