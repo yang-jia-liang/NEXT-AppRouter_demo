@@ -1,9 +1,9 @@
-import * as commonHttp from '@/api/common.js'
+import server from './page.server'
 import styles from "./page.module.scss"
 import { getDictionary } from "@/app/[lang]/dictionaries";
 
 export default async function Blog ({ params: { lang } }) {
-    const blogList = await commonHttp.getBlogList()
+    const blogList = await server.getBlogList();
     const dict = await getDictionary(lang)
 
     return (

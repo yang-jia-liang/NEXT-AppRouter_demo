@@ -13,6 +13,18 @@ const nextConfig = {
     //         },
     //     ]
     // },
+
+    /**
+     * logging 目前，仅使用于 fetch API 的打印
+     *
+     * logging: false,                       - 禁用开发模式下的打印
+     * logging.fetches.hmrRefreshes: true    - fetch请求从 Server Components HMR cache中使用缓存时，默认不会打印信息，可以设置开启打印
+     * */
+    // logging: {
+    //     fetches: {
+    //         fullUrl: true,
+    //     },
+    // },
 };
 
 export default nextConfig;
