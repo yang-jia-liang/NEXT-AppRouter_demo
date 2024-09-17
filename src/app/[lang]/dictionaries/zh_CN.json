@@ -1,9 +1,19 @@
 {
   "common": {
     "Home": "首页",
-    "Login": "登录",
     "About": "关于",
     "Blog": "博客",
     "this is a picture page": "这是一个图片页"
+  },
+
+  "loginPage": {
+    "User": "用户",
+    "Admin": "管理员",
+    "Guest": "游客",
+    "Select a user": "选择一个用户",
+    "You must select a user": "你必须选择一个用户",
+    "Password": "密码",
+    "input your password": "请输入密码",
+    "Login": "登录"
   }
 }

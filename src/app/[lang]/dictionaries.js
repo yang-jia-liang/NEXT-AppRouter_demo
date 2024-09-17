@@ -1,5 +1,3 @@
-import 'server-only'
-
 const dictionaries = {
     zh_CN: () => import('./dictionaries/zh_CN.json').then(module => module.default),
     en_US: () => import('./dictionaries/en_US.json').then(module => module.default),

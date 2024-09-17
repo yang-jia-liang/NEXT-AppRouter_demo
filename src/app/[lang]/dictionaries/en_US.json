@@ -1,9 +1,19 @@
 {
   "common": {
     "Home": "Home",
-    "Login": "Login",
     "About": "About",
     "Blog": "Blog",
     "this is a picture page": "this is a picture page"
+  },
+
+  "loginPage": {
+    "User": "User",
+    "Admin": "Admin",
+    "Guest": "Guest",
+    "Select a user": "Select a user",
+    "You must select a user": "You must select a user",
+    "Password": "Password",
+    "input your password": "input your password",
+    "Login": "Login"
   }
 }

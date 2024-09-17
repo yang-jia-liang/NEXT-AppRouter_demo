@@ -1,9 +1,19 @@
 {
   "common": {
     "Home": "フロントページへ",
-    "Login": "ログインします",
     "About": "概要",
     "Blog": "ブログ",
     "this is a picture page": "これは写真のページです"
+  },
+
+  "loginPage": {
+    "User": "ユーザー",
+    "Admin": "マネジメント",
+    "Guest": "お客様",
+    "Select a user": "ユーザーを選択",
+    "You must select a user": "ユーザーを選択する必要があります",
+    "Password": "パスワード",
+    "input your password": "パスワードを入力してください",
+    "Login": "ログインします"
   }
 }

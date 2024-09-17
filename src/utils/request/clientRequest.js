@@ -128,13 +128,9 @@ function transformRequestData(res) {
     }
     // 会话过期
     else if (code === STATUS_SESSION_EXPIRED) {
-        // tokenUtils.clear()
-        // location.href = `/login`
-
         redirect('/login')
         throw new Error(message)
     } else {
-        // ElMessage.error({ message: message || ERROR_DEFAULT_MSG })
         throw new Error(message || ERROR_DEFAULT_MSG)
     }
 }

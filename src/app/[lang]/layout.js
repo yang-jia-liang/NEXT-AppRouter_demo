@@ -1,10 +1,15 @@
+import {NextUIProvider} from "@nextui-org/react";
+import './global.css'
+
 export default function RootLayout({ children, params }) {
   return (
     <html lang={params.lang}>
-      <body>
-        global-layout
+      <body className="h-screen">
+      <NextUIProvider>
+          global-layout
 
-            { children }
+          { children }
+      </NextUIProvider>
       </body>
     </html>
   );
